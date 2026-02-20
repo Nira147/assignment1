@@ -1,25 +1,32 @@
-#include <stdio.h>
+#include<stdio.h>
+int main(){
+    int i,a[100], n, maximun;
+    printf("enter how many strore");
+    scanf("%d",&n);
 
-int main() {
-    int arr[] = {1, 3, 4, 10, 12, 30, 40};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    int largest = arr[0];
+    for(i=0;i<n;i++)
+    printf("enter the number %d",i);
+    scanf("%d",&a[i]);
+    {
+        maximun=a[0];
 
-    for(int i = 1; i < size; i++) {
-        if(arr[i] > largest) {
-            largest = arr[i];
+        for(i=0;i<n;i++){
+
+            if(maximun<a[i]){
+
+                maximum=a[i];
+            }
+            printf("The maximum is %d\n",maximum);
+
+            else {
+
+                printf("minimum");
+
+            }
+
+
+
+            return 0;
         }
     }
-
-    printf("Largest number is: %d\n", largest);
-
-    return 0;
 }
-
-
-
-
-
-
-
-
